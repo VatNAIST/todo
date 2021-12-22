@@ -2,9 +2,6 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-            <div>
-                <h1>ToDo App by Vinayak Teoh</h1>
-            </div>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
@@ -14,13 +11,13 @@ function App() {
     );
 }
 
-function MyTitle() {
-    return (
-        <div>
-            <h1>ToDo App by Vinayak Teoh</h1>
-        </div>
-    );
-}
+//function MyTitle() {
+//    return (
+//        <div>
+//            <h1>ToDo App by Vinayak Teoh</h1>
+//        </div>
+//    );
+//}
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
