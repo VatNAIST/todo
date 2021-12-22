@@ -14,7 +14,7 @@ function App() {
 
 function MyTitle() {
    return (
-    <h1 style="text-align: center">ToDo App by Vinayak Teoh</h1>
+    <h1 className="text-center">ToDo App by Vinayak Teoh</h1>
    );
 }
 
