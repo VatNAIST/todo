@@ -2,13 +2,21 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-            <h1>My Todo List</h1>
+            <MyTitle />
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
+    );
+}
+
+function MyTitle() {
+    return (
+        <div>
+            <h1 text-align="center">My TODO App</h1>
+        </div>
     );
 }
 
