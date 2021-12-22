@@ -1,0 +1,24 @@
+name: Build and Publish Docker
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run unit tests
+        run: npm test
+        env:
+          SQLITE_DB_LOCATION: /tmp/todo.db
